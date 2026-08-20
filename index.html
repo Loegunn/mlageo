@@ -23,6 +23,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>my little airport 歌詞地圖</title>
 <meta name="description" content="一張由歌詞建立嘅 my little airport 香港地圖。逐首歌核實過，搵唔到位置嘅唔會扮有。">
+<!-- ⚠ 測試期用：正式公開前刪走下面呢一行 -->
+<meta name="robots" content="noindex,nofollow">
 <meta name="author" content="Loegunn">
 <meta name="copyright" content="Copyright (c) 2026 Loegunn. All rights reserved.">
 <meta name="theme-color" content="#F5F4EF">
@@ -471,7 +473,7 @@ const PLACES = [
   {id:"guangz",name:"廣州",precision:"area",region:"away",lat:23.1291,lng:113.2644,note:"城市級"},
   {id:"westlk",name:"杭州西湖",precision:"area",region:"away",lat:30.2418,lng:120.142},
   {id:"beijing",name:"北京",precision:"area",region:"away",lat:39.9042,lng:116.4074,note:"城市級"},
-  {id:"finland",name:"芬蘭",precision:"area",region:"away",lat:61.9241,lng:25.7482,note:"國家級。歌入面當佢做一個去得到嘅目的地，所以落點；「北歐」範圍太大，撥咗落最底。"},
+  {id:"finland",name:"芬蘭",precision:"area",region:"away",lat:61.9241,lng:25.7482,note:"國家級。歌入面當佢做一個去得到嘅目的地；「北歐」範圍太大，唔另外落點。"},
   {id:"paris",name:"巴黎",precision:"area",region:"away",lat:48.8566,lng:2.3522,note:"城市級"},
   {id:"champs",name:"香榭麗舍大道",precision:"exact",region:"away",within:"paris",lat:48.8698,lng:2.3075},
   {id:"montpar",name:"Montparnasse",precision:"exact",region:"away",within:"paris",lat:48.8422,lng:2.322,note:"巴黎第 14 區"},
@@ -487,7 +489,7 @@ const PLACES = [
   {id:"lungwo",name:"龍和道",precision:"exact",region:"hk",lat:22.2825,lng:114.1655},
   {id:"xiamen",name:"廈門",precision:"area",region:"away",lat:24.4798,lng:118.0894,note:"城市級。歌詞仲提到廈門機場嘅麵店，無名。"},
   {id:"klncity",name:"九龍城",precision:"area",region:"hk",lat:22.329,lng:114.1905,note:"首歌嘅視點：坐巴士路過。"},
-  {id:"walled",name:"九龍寨城公園",precision:"exact",region:"hk",status:"gone",within:"klncity",lat:22.332,lng:114.19,note:"寨城九十年代初清拆，原址改建成公園。注意：歌詞尾句「對著公園嘆息」係泛稱，由上下文推斷係呢度，未經證實；但「寨城」本身喺歌詞直接出現過兩次。"},
+  {id:"walled",name:"九龍寨城公園",precision:"exact",region:"hk",status:"gone",within:"klncity",lat:22.332,lng:114.19,note:"寨城九十年代初清拆，原址改建成公園。歌詞尾句「對著公園嘆息」係泛稱，由上下文推斷係呢度，未經證實；但「寨城」本身喺歌詞直接出現過兩次。"},
   {id:"sungwong",name:"宋皇臺",precision:"exact",region:"hk",within:"klncity",lat:22.3268,lng:114.1899,note:"實體古蹟。歌詞講「位置不遠」，係當地人嘅方位感。"},
   {id:"regal",name:"富豪東方酒店",precision:"exact",region:"hk",within:"klncity",lat:22.3305,lng:114.1925,note:"歌詞只講「富豪酒店」。推論：富豪機場酒店喺赤鱲角，1998 年後先有；首歌講緊啟德年代嘅九龍城，所以只可能係沙浦道／太子道東嘅富豪東方酒店。"},
   {id:"kaitak",name:"啟德",precision:"area",region:"hk",status:"gone",lat:22.329,lng:114.2,note:"啟德機場 1998 年停用。「昨日啟德已變冷清」。"},
@@ -500,7 +502,7 @@ const PLACES = [
   {id:"langham",name:"朗豪坊",precision:"exact",region:"hk",lat:22.3183,lng:114.169},
   {id:"amsterdam",name:"阿姆斯特丹",precision:"area",region:"away",lat:52.3676,lng:4.9041},
   {id:"iceland",name:"冰島",precision:"area",region:"away",lat:64.9631,lng:-19.0208,note:"國家級。"},
-  {id:"germany",name:"德國",precision:"area",region:"away",lat:51.1657,lng:10.4515,note:"國家級，而且只係轉機，係全份資料最弱嘅一個外地點。"},
+  {id:"germany",name:"德國",precision:"area",region:"away",lat:51.1657,lng:10.4515,note:"國家級。歌入面只係轉機經過，冇提到任何具體地點。"},
   {id:"okinawa",name:"沖繩",precision:"area",region:"away",lat:26.3344,lng:127.8056,note:"縣級。"},
   {id:"sweden",name:"瑞典",precision:"area",region:"away",lat:60.1282,lng:18.6435,note:"國家級。"},
   {id:"wongtai",name:"黃大仙",precision:"area",region:"hk",lat:22.3419,lng:114.1939},
@@ -510,7 +512,7 @@ const PLACES = [
   {id:"govhouse",name:"禮賓府",precision:"exact",region:"hk",lat:22.2792,lng:114.1553,note:"中環上亞厘畢道。同〈下亞厘畢道〉隔一條街。"},
   {id:"kamo",name:"鴨川",precision:"exact",region:"away",within:"kyoto",lat:35.0116,lng:135.772},
   {id:"thailand",name:"泰國",precision:"area",region:"away",lat:15.87,lng:100.9925,note:"國家級。夜市攤檔無名。"},
-  {id:"nanyang",name:"南洋",precision:"area",region:"away",lat:1.3521,lng:103.8198,note:"區域級。覆核後改判收：「那年獨自去南洋」係真實旅程唔係修辭。坐標暫用新加坡代表，因「南洋」歷史上泛指東南亞華人聚居地區，冇單一中心點。"},
+  {id:"nanyang",name:"南洋",precision:"area",region:"away",lat:1.3521,lng:103.8198,note:"區域級。「那年獨自去南洋」係真實旅程唔係修辭。坐標暫用新加坡代表，因「南洋」歷史上泛指東南亞華人聚居地區，冇單一中心點。"},
   {id:"peaktop",name:"太平山頂（爐峰峽）",precision:"exact",region:"hk",lat:22.2759,lng:114.1455,note:"太平山頂／爐峰峽一帶，庇理羅士山頂別墅所在。同〈今晚講嘢夜唔夜〉共用「山頂」呢個地名，但呢首歌有具體歷史敘事，精度較高。"},
   {id:"centralfr",name:"中環（前法國外方傳道會大樓）",precision:"exact",region:"hk",lat:22.2795,lng:114.1588,note:"終審法院舊址。庇理羅士每日騎駱駝由山頂返呢度上班。"},
   {id:"jumbo",name:"水上皇殿",precision:"exact",region:"hk",status:"gone",lat:22.228,lng:114.1633,note:"即珍寶海鮮舫，香港仔。2022年6月拖離香港仔往東南亞途中，喺南海西沙群島附近沉沒，真實事件。"}
@@ -519,18 +521,18 @@ const PLACES = [
 /* ══════════ 表三：關聯 ══════════ */
 const REFS = [
   {place:"hunghom",song:"zoo",kind:"lyric",line:"在那間紅磡近黃埔的商店"},
-  {place:"sino",song:"zoo",kind:"meta",note:"裁定：動物園本身唔算歌詞地點（無名，2004、2008 兩個版本都一致）。但碟名嘅「動物園」考證返係信和地庫嘅 Zoo Records（港01、中文維基），所以信和中心呢個 ref 保留，改標做 kind: meta —— 佢嘅身分係「碟名嘅出處」，唔係「呢首歌歌詞入面出現嘅地方」。另外，原曲曲式改編自 1871 年英國街頭歌謠 Walking in the Zoo（倫敦動物園）。"},
+  {place:"sino",song:"zoo",kind:"meta",note:"動物園本身唔算歌詞地點（無名，2004、2008 兩個版本都一致）。但碟名嘅「動物園」考證返係信和地庫嘅 Zoo Records（港01、中文維基），所以呢個點嘅身分係「碟名嘅出處」，唔係「歌詞入面出現嘅地方」。另外，原曲曲式改編自 1871 年英國街頭歌謠 Walking in the Zoo（倫敦動物園）。"},
   {place:"mongkok",song:"jos",kind:"lyric",line:"Depression in your shop of Mong Kok",note:"Josephine 係樹仁同學，間精品店喺旺角，但冇門牌。阿P同 Nicole 落堂成日去流連。"},
   {place:"stafford",song:"vic",kind:"lyric",line:"you are on your way to Stafford in UK"},
   {place:"shueyan",kind:"meta",note:"阿P同 Nicole 喺樹仁新聞系識，Josephine 間精品店就係同學開嘅"},
   {place:"paktin",song:"pak",kind:"lyric",note:"白田購物中心喺深水埗石硤尾偉智里 1-3 號。呢度同白田邨合併做一個點，冇分開落。"},
   {place:"meifoo",song:"leo",kind:"lyric",line:"now I stay in Mei Foo, but where are you?"},
-  {place:"sheungw",song:"spr",kind:"lyric",line:"由上環到天后",note:"歌詞唱「由上環到天后」。呢個係路線，兩個端點各落一點，中間暫時冇連線。"},
+  {place:"sheungw",song:"spr",kind:"lyric",line:"由上環到天后",note:"歌詞唱「由上環到天后」，係一程港島綫嘅車程，中間隔中環、金鐘、灣仔、銅鑼灣五個站。2005年寫嗰陣上環仲係港島綫西端總站。"},
   {place:"bc",song:"cinema",kind:"lyric",note:"歌名指向。歌詞本身冇講明邊一間戲院，判斷根據係「電影中心」為百老匯院線官方簡稱，以及 2016 年全港只餘呢一間非主流電影戲院。"},
   {place:"tinhau",song:"spr",kind:"lyric",line:"由上環到天后",note:"「由上環到天后」嘅另一端。"},
-  {place:"lckpark",song:"lck",kind:"lyric",note:"首歌係法文讀白，歌詞完全冇提地方，地名淨係喺歌名。呢種「地方喺標題唔喺歌詞」反而最硬淨。"},
+  {place:"lckpark",song:"lck",kind:"lyric",note:"首歌係法文讀白，歌詞完全冇提任何地方，地名只出現喺歌名 —— 由歌名直接指定嘅地點，反而冇乜爭議空間。"},
   {place:"lingnan",song:"mfgsb",kind:"lyric",line:"我們在嶺南之風、美孚之巔",note:"嶺南之風係荔枝角公園第三期嘅東南部，2000 年 11 月 11 日開放，12,500 平方米。阿P兩首歌用咗兩個唔同名去指同一片地。"},
-  {place:"meifoo",song:"mfgsb",kind:"lyric",line:"美孚根斯堡",note:"歌名「美孚根斯堡」，歌詞有「美孚之巔」。二十世紀初美孚石油公司喺荔枝角起油庫，後來改建成美孚新邨。注意：「美孚之巔」查唔到實體地標，係比喻用法（企喺高處嘅意象），唔當佢做獨立地標。"},
+  {place:"meifoo",song:"mfgsb",kind:"lyric",line:"美孚根斯堡",note:"歌名「美孚根斯堡」，歌詞有「美孚之巔」。二十世紀初美孚石油公司喺荔枝角起油庫，後來改建成美孚新邨。「美孚之巔」查唔到實體地標，係比喻用法（企喺高處嘅意象），唔當佢做獨立地標。"},
   {place:"paktin",song:"mfgsb",kind:"lyric",line:"白田珍寶金",note:"歌名「白田珍寶金」。"},
   {place:"knutsfd",song:"chan5",kind:"lyric",line:"或者我們只不過需要間唔中去一次諾士佛臺",note:"尖沙咀酒吧街，歌詞尾段講出全名。全張碟最無爭議、最容易去嘅一點。"},
   {place:"tungchg",song:"grad",kind:"lyric",line:"見工見到入左去東涌",note:"見工見到入咗去東涌，份工要去掘山窿。區級但語境具體，係西部基建工程。"},
@@ -540,7 +542,7 @@ const REFS = [
   {place:"finland",song:"nordic",kind:"lyric",line:"提議先到芬蘭旅遊",note:"兩個人討論完死亡，決定先去芬蘭旅遊，然後幻想喺北歐凍死。"},
   {place:"beijing",song:"porn",kind:"lyric",note:"歌詞不停問對方喺北京有冇男朋友，最後講佢返北京。"},
   {place:"klntong",song:"lmklt",kind:"lyric",note:"英文第一句就講去咗九龍塘，中文更直接。"},
-  {place:"cityu",song:"lmklt",kind:"lyric",line:"在城大旁的酒店爆房",note:"歌詞講「在城大旁的酒店爆房」。城大本身確定，間酒店未有可靠來源確認，撥咗落最底。"},
+  {place:"cityu",song:"lmklt",kind:"lyric",line:"在城大旁的酒店爆房",note:"歌詞講「在城大旁的酒店爆房」。城大本身確定，但間酒店未有可靠來源確認，所以只落城大呢個點，酒店留咗喺「未解之地」。"},
   {place:"kwnpool",song:"kpp",kind:"lyric"},
   {place:"tiukeng",song:"scarf",kind:"lyric",line:"每天放工之後在調景嶺等候",note:"歌詞唱放工之後喺調景嶺等候。"},
   {place:"npoint",song:"pigs",kind:"lyric",line:"昨日在北角",note:"歌詞開頭：昨日在北角，今日在鰂魚涌。誦讀係阿雪，講豬隻走入市區被撲殺。"},
@@ -549,11 +551,11 @@ const REFS = [
   {place:"paris",song:"extinct",kind:"lyric",note:"末日將至，提議九月一齊去巴黎。呢個係歌詞直接講嘅目的地。"},
   {place:"champs",song:"extinct",kind:"lyric",line:"嚐一口香榭",note:"同一句歌詞講「嚐一口香榭」。"},
   {place:"ngautk",song:"ntk",kind:"lyric",note:"歌詞兩次點名：牛頭角都玩厭了、牛頭角的日出都看厭。仲提到解散咗嘅樂隊同著橙色衫嘅阿Tim，同一首叫「究竟應該點？」嘅歌。官網歌名冇「的」字。"},
-  {place:"sino",song:"sinosell",kind:"lyric",note:"唔止點名，仲寫咗一種只喺信和成立嘅在地知識：二手唱片鋪分兩種，一種逐張報價，一種一口價收一堆，所以要先去第一種再去第二種。1980–90 年代信和二手唱片鋪多達二十幾間、新碟鋪十幾間，要有呢種密度，「揀鋪次序」呢個講法先至成立。 注意：歌詞由頭到尾只講「二手唱片店」，「信和」其實只出現喺歌名。"},
+  {place:"sino",song:"sinosell",kind:"lyric",note:"唔止點名，仲寫咗一種只喺信和成立嘅在地知識：二手唱片鋪分兩種，一種逐張報價，一種一口價收一堆，所以要先去第一種再去第二種。1980–90 年代信和二手唱片鋪多達二十幾間、新碟鋪十幾間，要有呢種密度，「揀鋪次序」呢個講法先至成立。不過歌詞由頭到尾只講「二手唱片店」，「信和」其實只出現喺歌名。"},
   {place:"guangz",song:"gz",kind:"lyric",note:"真正設定喺廣州嘅一首。對方講明未離開過廣州、未見過海，問香港係唔係好繁榮、香港嘅海係點。城市級，冇具體場所。"},
   {place:"tokwaw",song:"tkw",kind:"lyric",line:"只希望沙中線的那個站可以起得更慢，再貴的租我已不能負擔",note:"寫土瓜灣舊區嘅改變。有一個可核對嘅預言：2014 年歌詞講「只希望沙中線的那個站可以起得更慢，再貴的租我已不能負擔」—— 土瓜灣站最終 2021 年 6 月 27 日隨屯馬綫全綫貫通啟用，建喺馬頭圍道地底。首歌驚嘅嘢，七年後真係發生咗。"},
   {place:"hoisham",song:"hs",kind:"lyric",line:"到了六十八",note:"歌名直接指定。民俗核得到：相傳情侶拜過海心石就會有段美好姻緣，同歌詞一致。內部時序亦對得上 —— 主角話自己「到了六十八」，2014 年 68 歲即約 1946 年出世，六歲即約 1952 年；而海心島 1964 年填海先至被夷平。即係佢六歲畀人帶去「一個島」嗰陣，海心島真係仲係島。"},
-  {place:"cheungc",song:"cc",kind:"lyric",line:"三輪單車與沙灘已把下午消磨",note:"歌名＋歌詞重複五次。歌詞有三輪單車、沙灘、球場 —— 長洲禁行汽車、以租單車出名，細節全部核到。全份資料第一個離島。"},
+  {place:"cheungc",song:"cc",kind:"lyric",line:"三輪單車與沙灘已把下午消磨",note:"歌名＋歌詞重複五次。歌詞有三輪單車、沙灘、球場 —— 長洲禁行汽車、以租單車出名，細節全部對得上。地圖上唯一嘅離島。"},
   {place:"albert",song:"alb",kind:"lyric",line:"由歌賦街飲到去下亞厘畢道",note:"歌名。同歌賦街係一條實際飲酒路線嘅兩端。 同上環、歌賦街係同一晚動線嘅終點。"},
   {place:"connau",song:"conn",kind:"lyric",line:"今夜到干諾道中一起瞓",note:"干諾道中，金鐘一帶。"},
   {place:"taikok",song:"mcd",kind:"lyric",line:"那夜經過大角咀你細訴小時候",note:"「那夜經過大角咀你細訴小時候」。同廟街、嶺南之風係同一首歌嘅三個點。"},
@@ -562,7 +564,7 @@ const REFS = [
   {place:"dog99",song:"syc",kind:"lyric",line:"邊聽邊講我忘了怎去99咖啡店",note:"多個本地來源（香港青年協會2024年專題、getreadyhk等）均將呢間同歌詞掛鈎。歌詞引句轉錄自二手來源，未同官網歌詞逐字核對。"},
   {place:"manfat",song:"syc",kind:"lyric",note:"歌詞附帶實地細節（暗光卡位窗邊）。地點判斷屬作者本地認知，未有公開來源佐證。"},
   {place:"sycam",song:"syc",kind:"lyric",line:"詩歌舞街地上有著光點閃閃",note:"「詩歌舞街地上有著光點閃閃」。一場 gig（大角咀）→ 散場行去深水埗 → 途中經詩歌舞街，三個地名喺同一區連成一線。更正：歌詞「上山那間酒店」原判喺澳門，覆核後確認唔係澳門，係詩歌舞街一帶嘅場景，已將澳門呢個 ref 剷走。"},
-  {place:"texas",song:"tx",kind:"lyric",date:"2028-02-22",line:"你在黑夜時我在白天",note:"判例：由歌詞內部就判得到係美國德州唔係山東德州 —— 歌詞講「你在黑夜時我在白天」，即係同香港差約半日。山東德州同香港零時差，美國德州差十幾個鐘。唔使靠外部資料。同首歌另有一個具體未來日期：2028 年 2 月 22 號。"},
+  {place:"texas",song:"tx",kind:"lyric",date:"2028-02-22",line:"你在黑夜時我在白天",note:"由歌詞內部就判得到係美國德州唔係山東德州：歌詞講「你在黑夜時我在白天」，即係同香港差約半日。山東德州同香港零時差，美國德州差十幾個鐘。同首歌另有一個具體未來日期：2028 年 2 月 22 號。"},
   {place:"peak",song:"night",kind:"lyric",line:"咁啱我就有部車，車你去山頂感受個山有幾斜",note:"「咁啱我就有部車，車你去山頂感受個山有幾斜」。「有幾斜」係實際駕駛體驗，唔係地名裝飾。"},
   {place:"kyoto",song:"kyotoS",kind:"lyric",note:"阿P第一次京都之旅、寫俾媽媽嘅歌。歌詞講七月某夜住民宿，聽到房外老闆娘傾偈。真實旅程。"},
   {place:"tainan",song:"deposit",kind:"lyric",note:"私奔到寶島，去到台南，風景會做到治療我們嘅虛無。"},
@@ -584,14 +586,14 @@ const REFS = [
   {place:"amsterdam",song:"ams",kind:"lyric",date:"2017-07-14",note:"第一次去，夜機。"},
   {place:"iceland",song:"ams",kind:"lyric",line:"轉機去德國再去冰島",note:"「轉機去德國再去冰島」。"},
   {place:"germany",song:"ams",kind:"lyric",line:"轉機去德國再去冰島",note:"轉機途經。"},
-  {place:"yuemin",song:"y168",kind:"lyric",line:"一六八遊戲機中心",note:"碟內文案直接寫明：觀塘裕民坊舊商場有間「一六八遊戲機中心」。歌名就係間舖嘅名 —— 全份資料第一次。歌詞：午飯後喺街上行，行入裕民中心舊商場，發現遊戲機中心，入去玩《雙截龍》。"},
+  {place:"yuemin",song:"y168",kind:"lyric",line:"一六八遊戲機中心",note:"碟內文案直接寫明：觀塘裕民坊舊商場有間「一六八遊戲機中心」。歌名就係間舖嘅名。歌詞：午飯後喺街上行，行入裕民中心舊商場，發現遊戲機中心，入去玩《雙截龍》。"},
   {place:"okinawa",song:"okinawaS",kind:"lyric",line:"在沖繩黃昏後街上",note:"「在沖繩黃昏後街上」。敘事者自認「我是這裡的遊客，家在異鄉」。"},
   {place:"tokwaw",song:"nathanS",kind:"lyric",note:"出發點：喺土瓜灣搭 6C。"},
   {place:"nathanrd",song:"nathanS",kind:"lyric",note:"坐上巴士上層最前，坐到去油麻地，途中有架 1A 停喺前面，兩架車喺彌敦道上一路並行。6C 由九巴營辦，來往九龍城碼頭及美孚，走線包括土瓜灣道、彌敦道 —— 即係首歌講嘅路線今日照樣行得到。碟內文案：曾經香港最迷幻的風景。"},
   {place:"ymt",song:"nathanS",kind:"lyric",note:"6C 路線嘅終點段。"},
   {place:"langham",song:"nathanS",kind:"lyric",note:"去朗豪坊睇戲。待考：邊間戲院。"},
   {place:"sweden",song:"heyhey",kind:"lyric",line:"同你搭長途巴士去瑞典",note:"「同你搭長途巴士去瑞典」。此曲陳輝陽作曲，仍由 mla 演繹。"},
-  {place:"loststars",song:"syc",kind:"lyric",date:"2018-11-20",line:"那晚看Russian Red大角咀表演，你與我竟會再遇見",note:"演出確認：Russian Red（西班牙）2018年11月20日喺大角咀 Lost Stars Livehouse 演出。Yahoo 新聞同 HK01 均直接將呢句歌詞同呢場演出掛鈎；中大學生報有現場文章記錄日期；當年售票頁列明場地地址。屬全份資料入面證據最完整嘅條目之一。"},
+  {place:"loststars",song:"syc",kind:"lyric",date:"2018-11-20",line:"那晚看Russian Red大角咀表演，你與我竟會再遇見",note:"演出確認：Russian Red（西班牙）2018年11月20日喺大角咀 Lost Stars Livehouse 演出。Yahoo 新聞同 HK01 均直接將呢句歌詞同呢場演出掛鈎；中大學生報有現場文章記錄日期；當年售票頁列明場地地址。"},
   {place:"ssp",song:"syc",kind:"lyric",line:"完場與你去深水埗那邊",note:"「完場與你去深水埗那邊」。接返 2018 年〈阿姆斯特丹夜機〉講「去完旅行我會搬去深水埗」—— 居住地層同歌詞層對上咗。"},
   {place:"wongtai",song:"gb20",kind:"lyric",line:"第一張相喺黃大仙開始",note:"「第一張相喺黃大仙開始」；黃大仙之後話寄嘢俾對方，問地址。一段四年關係嘅起點。"},
   {place:"prince",song:"kclass",kind:"lyric",line:"如果可以重來，到太子午夜時候",note:"太子一帶。"},
@@ -605,7 +607,7 @@ const REFS = [
   {place:"peaktop",song:"camel",kind:"lyric",line:"百幾年前一個猶太人每日由山頂騎駱駝去中環返工",note:"19世紀末猶太商人庇理羅士每日騎駱駝由山頂別墅返工。山頂纜車1888年通車後駱駝遭冷落，傳說喺山頂跳崖自殺（港01引「活現香港」陳智遠——係傳說，未見同期報紙記載）。"},
   {place:"centralfr",song:"camel",kind:"lyric",line:"百幾年前一個猶太人每日由山頂騎駱駝去中環返工",note:"庇理羅士辦公室所在，即今終審法院舊址。"},
   {place:"jumbo",song:"camel",kind:"lyric",line:"珍寶船結業之後 去到公海好似有意識咁 直接沉沒海底裡面",note:"「珍寶船結業之後／去到公海好似有意識咁／直接沉沒海底裡面」，對應2022年6月珍寶海鮮舫沉沒嘅真實事件。"},
-  {place:"sheungw",song:"alb",kind:"lyric",line:"六點上環地鐵A2出口地面見",note:"官網全文有「六點上環地鐵A2出口地面見」，之前漏咗。同歌賦街、下亞厘畢道係同一晚完整動線：上環見面→歌賦街飲酒→下亞厘畢道，相隔約1公里。出HTML時應做同場景連線（母子關係），唔係純並列。"}
+  {place:"sheungw",song:"alb",kind:"lyric",line:"六點上環地鐵A2出口地面見",note:"官網全文有「六點上環地鐵A2出口地面見」。上環、歌賦街、下亞厘畢道三個地點構成同一晚由見面、飲酒到離開嘅行走路線，全程約1公里，由西行向東。"}
 ];
 
 /* ══════════ 表四：搵唔到 ══════════ */
