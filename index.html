@@ -295,7 +295,8 @@ mark{background:rgba(91,79,233,.16);color:inherit;border-radius:2px;padding:0 1p
   .list button{padding:11px 20px}
   .foot-link{padding:14px 20px 0}
 
-  .list-wrap{touch-action:pan-y;padding-bottom:calc(80px + var(--sab))}
+  .list-wrap{touch-action:pan-y;padding-bottom:calc(80px + var(--sab) + var(--sheetoff,0px))}
+  .detail{padding-bottom:calc(70px + var(--sab) + var(--sheetoff,0px))}
   #legendBtn{bottom:auto;top:calc(12px + var(--sat))}
   .leaflet-top.leaflet-left{top:calc(10px + var(--sat))}
   .leaflet-control-attribution{font-size:9.5px;padding:1px 5px;border-radius:3px;max-width:62vw}
@@ -1417,7 +1418,7 @@ function setSheet(i){
   sheet.style.transform = `translateY(${snaps[cur]}px)`;
 }
 function initSheet(){
-  if(!isMobile()){ sheet.style.transform = ""; return; }
+  if(!isMobile()){ sheet.style.transform = ""; sheet.style.removeProperty("--sheetoff"); return; }
   calcSnaps(); setSheet(cur);
 }
 window.addEventListener("resize",()=>{ initSheet(); map.invalidateSize(); });
@@ -1445,6 +1446,7 @@ grip.addEventListener("pointermove",e=>{
   if(dragY===null) return;
   const y = Math.max(0, Math.min(snaps[0], startT + (e.clientY-dragY)));
   sheet.style.transform = `translateY(${y}px)`;
+  sheet.style.setProperty("--sheetoff", y + "px");
 });
 grip.addEventListener("pointerup",e=>{
   if(dragY===null) return;
