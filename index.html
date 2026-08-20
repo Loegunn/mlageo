@@ -1,4 +1,22 @@
 <!DOCTYPE html>
+<!--
+  ┌──────────────────────────────────────────────────────────────┐
+  │  MLA Map — my little airport 歌詞地圖                          │
+  │  https://loegunn.github.io/mlageo/                            │
+  │                                                               │
+  │  Copyright (c) 2026 Loegunn. All rights reserved.             │
+  │  No open-source license is granted. You may not redistribute  │
+  │  or republish this project, in whole or in substantial part,  │
+  │  without prior permission.                                    │
+  │                                                               │
+  │  If you reference material from this project, attribute it:   │
+  │      MLA Map by Loegunn — https://loegunn.github.io/mlageo/   │
+  │                                                               │
+  │  Unofficial fan project. Not affiliated with my little        │
+  │  airport. Lyrics quoted in short fragments for geographical   │
+  │  research only, always attributed. Basemap (c) OSM / CARTO.   │
+  └──────────────────────────────────────────────────────────────┘
+-->
 <html lang="zh-HK">
 <head>
 <meta charset="utf-8">
@@ -7,6 +25,8 @@
 <meta name="description" content="一張由歌詞建立嘅 my little airport 香港地圖。逐首歌核實過，搵唔到位置嘅唔會扮有。">
 <!-- ⚠ 測試期用：正式公開前刪走下面呢一行 -->
 <meta name="robots" content="noindex,nofollow">
+<meta name="author" content="Loegunn">
+<meta name="copyright" content="Copyright (c) 2026 Loegunn. All rights reserved.">
 <meta name="theme-color" content="#F5F4EF">
 <meta property="og:type" content="website">
 <meta property="og:title" content="my little airport 歌詞地圖">
@@ -222,6 +242,7 @@ a:hover{text-decoration:underline}
 .hit-why{display:block;font-size:12px;color:var(--ink-3);margin-top:3px;line-height:1.6}
 mark{background:rgba(91,79,233,.16);color:inherit;border-radius:2px;padding:0 1px}
 .foot-link{padding:18px 22px 0;line-height:2.3}
+.credit{padding:24px 22px 0;margin:0;font-size:11.5px;color:var(--ink-3);border-top:1px solid var(--line);padding-top:16px}
 .foot-link button{font-size:12.5px;color:var(--ink-2);border-bottom:1px solid var(--line-strong)}
 .foot-link button:hover{color:var(--ink)}
 
@@ -328,6 +349,7 @@ mark{background:rgba(91,79,233,.16);color:inherit;border-radius:2px;padding:0 1p
     <div class="list-wrap" id="browse">
       <p class="list-lab" id="listLab"></p>
       <ul class="list" id="list"></ul>
+      <p class="credit" id="credit"></p>
       <p class="foot-link"><button id="goneBtn"></button><br><button id="unmappedBtn"></button><br><button id="methodBtn">考證方法</button></p>
     </div>
 
@@ -873,6 +895,8 @@ function renderList(){
     : `mla 唱過、去過、想去嘅地方。香港嗰 ${other} 個照樣喺圖上。`;
   unBtn.textContent = `未解之地・${UNMAPPED.length} 個　歌詞講過但搵唔到位置`;
   goneBtn.textContent = `消失的香港・${NODES.filter(o=>o.p.status).length} 個　已經冇咗或者變咗`;
+  const cred = document.getElementById("credit");
+  if(cred) cred.textContent = `MLA Map by Loegunn・非官方歌迷 project`;
   showBrowse();
 }
 
@@ -1216,6 +1240,8 @@ function renderSearch(){
   noteEl.textContent = "搜尋範圍：歌名、地名、專輯、異名、考證註解。";
   unBtn.textContent = `未解之地・${UNMAPPED.length} 個　歌詞講過但搵唔到位置`;
   goneBtn.textContent = `消失的香港・${NODES.filter(o=>o.p.status).length} 個　已經冇咗或者變咗`;
+  const cred = document.getElementById("credit");
+  if(cred) cred.textContent = `MLA Map by Loegunn・非官方歌迷 project`;
   showBrowse();
 }
 
