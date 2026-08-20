@@ -424,6 +424,7 @@ const PLACES = [
   {id:"connau",name:"干諾道中",precision:"area",region:"hk",lat:22.287,lng:114.1585,note:"成條長路，呢個係代表點"},
   {id:"knutsfd",name:"諾士佛臺",precision:"exact",region:"hk",lat:22.3012,lng:114.1728},
   {id:"kwnpool",name:"九龍公園游泳池",precision:"exact",region:"hk",lat:22.3013,lng:114.1697},
+  {id:"loststars",name:"Lost Stars Livehouse（大角咀）",precision:"exact",region:"hk",within:"taikok",status:"gone",lat:22.3207,lng:114.1614,note:"大角咀利得街11號利奧坊一期地下506號舖。2018年開業，香港少數領有公眾娛樂場所牌照嘅 livehouse，可容納約200人。2024年4月27日結業，同年7月喺尖沙咀K11 Art Mall重開，原址已經冇咗。"},
   {id:"sycam",name:"詩歌舞街",precision:"exact",region:"hk",within:"taikok",lat:22.32,lng:114.1645,note:"喺大角咀範圍以內，南起太子道西，北接大角咀道。"},
   {id:"sino",name:"信和中心",precision:"exact",region:"hk",status:"changed",within:"mongkok",lat:22.3178,lng:114.1706,note:"旺角彌敦道 582-592 號，1979 年落成，低層作商場，以銷售潮流產品聞名。樓仲喺度，行得入去，但內容已經唔同 —— 今日以動漫、韓星周邊為主，二手唱片鋪剩返唔多。"},
   {id:"mongkok",name:"旺角",precision:"area",region:"hk",lat:22.3193,lng:114.1694},
@@ -471,6 +472,7 @@ const PLACES = [
   {id:"regal",name:"富豪東方酒店",precision:"exact",region:"hk",within:"klncity",lat:22.3305,lng:114.1925,note:"歌詞只講「富豪酒店」。推論：富豪機場酒店喺赤鱲角，1998 年後先有；首歌講緊啟德年代嘅九龍城，所以只可能係沙浦道／太子道東嘅富豪東方酒店。"},
   {id:"kaitak",name:"啟德",precision:"area",region:"hk",status:"gone",lat:22.329,lng:114.2,note:"啟德機場 1998 年停用。「昨日啟德已變冷清」。"},
   {id:"ssp",name:"深水埗",precision:"area",region:"hk",lat:22.3308,lng:114.1624},
+  {id:"dog99",name:"Dog99 Coffee",precision:"exact",region:"hk",within:"ssp",lat:22.3293,lng:114.1659,note:"註冊地址深水埗福榮街23號地舖，但實體門口喺黃竹街上，屬轉角舖。2018年開業，曾經24小時營業，現時中午12點至凌晨4點。香港青年協會2024年專題同多篇本地報道均指呢間就係〈詩歌舞街〉入面嘅99咖啡店。距萬發海鮮菜館約50米。"},
   {id:"manfat",name:"萬發海鮮菜館",precision:"exact",region:"hk",within:"ssp",lat:22.3289,lng:114.1655,note:"深水埗福華街55號地舖，位於福華街同黃竹街轉角（實地相片見「黃竹街15E-19」路牌），佔多過一個舖位，沿玻璃窗有座位。大排檔式，06:00–00:00。深水埗另有同名分店（九江街150-152號、耀東街），本條採福華街嗰間 —— 依據係作者本地認知，未有公開來源將呢間同歌詞掛鈎。旁證：距詩歌舞街約1公里，比九江街順路；實地有窗邊位，同歌詞描述吻合。相片只證實舖位同環境，唔證實歌詞所指。"},
   {id:"yuemin",name:"裕民坊",precision:"area",region:"hk",status:"gone",lat:22.3122,lng:114.2255,note:"觀塘市中心重建，舊裕民坊商場已拆卸。"},
   {id:"nathanrd",name:"彌敦道",precision:"area",region:"hk",lat:22.31,lng:114.1707,note:"成條長路（尖沙咀至旺角），呢個係代表點。"},
@@ -537,6 +539,7 @@ const REFS = [
   {place:"taikok",song:"mcd",kind:"lyric",line:"那夜經過大角咀你細訴小時候",note:"「那夜經過大角咀你細訴小時候」。同廟街、嶺南之風係同一首歌嘅三個點。"},
   {place:"fotan",song:"ft",kind:"lyric"},
   {place:"westlk",song:"wl",kind:"lyric"},
+  {place:"dog99",song:"syc",kind:"lyric",line:"邊聽邊講我忘了怎去99咖啡店",note:"多個本地來源（香港青年協會2024年專題、getreadyhk等）均將呢間同歌詞掛鈎。歌詞引句轉錄自二手來源，未同官網歌詞逐字核對。"},
   {place:"manfat",song:"syc",kind:"lyric",note:"歌詞附帶實地細節（暗光卡位窗邊）。地點判斷屬作者本地認知，未有公開來源佐證。"},
   {place:"sycam",song:"syc",kind:"lyric",line:"詩歌舞街地上有著光點閃閃",note:"「詩歌舞街地上有著光點閃閃」。一場 gig（大角咀）→ 散場行去深水埗 → 途中經詩歌舞街，三個地名喺同一區連成一線。更正：歌詞「上山那間酒店」原判喺澳門，覆核後確認唔係澳門，係詩歌舞街一帶嘅場景，已將澳門呢個 ref 剷走。"},
   {place:"texas",song:"tx",kind:"lyric",date:"2028-02-22",line:"你在黑夜時我在白天",note:"判例：由歌詞內部就判得到係美國德州唔係山東德州 —— 歌詞講「你在黑夜時我在白天」，即係同香港差約半日。山東德州同香港零時差，美國德州差十幾個鐘。唔使靠外部資料。同首歌另有一個具體未來日期：2028 年 2 月 22 號。"},
@@ -568,7 +571,7 @@ const REFS = [
   {place:"ymt",song:"nathanS",kind:"lyric",note:"6C 路線嘅終點段。"},
   {place:"langham",song:"nathanS",kind:"lyric",note:"去朗豪坊睇戲。待考：邊間戲院。"},
   {place:"sweden",song:"heyhey",kind:"lyric",line:"同你搭長途巴士去瑞典",note:"「同你搭長途巴士去瑞典」。此曲陳輝陽作曲，仍由 mla 演繹。"},
-  {place:"taikok",song:"syc",kind:"lyric",line:"那晚看Russian Red大角咀表演，你與我竟會再遇見",note:"「那晚看 Russian Red 大角咀表演，你與我竟會再遇見」。Russian Red 係西班牙唱作人，同 mla 一樣喺 Elefant Records，真有其人真有其騷。表演場地待考。"},
+  {place:"loststars",song:"syc",kind:"lyric",date:"2018-11-20",line:"那晚看Russian Red大角咀表演，你與我竟會再遇見",note:"演出確認：Russian Red（西班牙）2018年11月20日喺大角咀 Lost Stars Livehouse 演出。Yahoo 新聞同 HK01 均直接將呢句歌詞同呢場演出掛鈎；中大學生報有現場文章記錄日期；當年售票頁列明場地地址。屬全份資料入面證據最完整嘅條目之一。"},
   {place:"ssp",song:"syc",kind:"lyric",line:"完場與你去深水埗那邊",note:"「完場與你去深水埗那邊」。接返 2018 年〈阿姆斯特丹夜機〉講「去完旅行我會搬去深水埗」—— 居住地層同歌詞層對上咗。"},
   {place:"wongtai",song:"gb20",kind:"lyric",line:"第一張相喺黃大仙開始",note:"「第一張相喺黃大仙開始」；黃大仙之後話寄嘢俾對方，問地址。一段四年關係嘅起點。"},
   {place:"prince",song:"kclass",kind:"lyric",line:"如果可以重來，到太子午夜時候",note:"太子一帶。"},
@@ -590,7 +593,6 @@ const UNMAPPED = [
   {song:"jos",label:"Josephine's Shop",why:"舊店門牌未有公開資料可以確認。"},
   {song:"lmklt",label:"城大旁嘅酒店",why:"歌詞講得好具體，但未有可靠來源確認係邊間。待考證。"},
   {song:"gz",label:"足浴店",why:"歌入面冇講係邊間。"},
-  {song:"syc",label:"99 咖啡店",why:"歌詞點名，但核唔到地址。追到就係繼信和中心、一六八之後第三間有名嘅實體舖。"},
 ];
 
 /* ══════════ 組裝 ══════════ */
@@ -869,8 +871,8 @@ function renderList(){
   noteEl.textContent = STATE.region==="hk"
     ? (other ? `另有 ${other} 個外地地點，切去「世界」睇。` : "")
     : `mla 唱過、去過、想去嘅地方。香港嗰 ${other} 個照樣喺圖上。`;
-  unBtn.textContent = `未解之地・${UNMAPPED.length} 個`;
-  goneBtn.textContent = `消失的香港・${NODES.filter(o=>o.p.status).length} 個`;
+  unBtn.textContent = `未解之地・${UNMAPPED.length} 個　歌詞講過但搵唔到位置`;
+  goneBtn.textContent = `消失的香港・${NODES.filter(o=>o.p.status).length} 個　已經冇咗或者變咗`;
   showBrowse();
 }
 
@@ -1046,7 +1048,8 @@ function unmappedView(){
   }).join("");
   showDetail(`<button class="back" data-back>← 返回</button>
     <p class="d-name">未解之地</p>
-    <p class="d-meta">${UNMAPPED.length} 個喺歌入面有名有姓、但暫時考證唔到位置嘅地方</p>
+    <p class="d-meta">${UNMAPPED.length} 個</p>
+    <div class="d-sec"><p class="d-body">歌詞有名有姓講過一個地方，但考證唔到佢喺邊 —— 可能係舊舖冇公開門牌，可能係同名太多分唔到邊間，可能係歌詞根本冇講明。呢啲地方唔會出現喺地圖上，但照樣列出嚟：唔確定本身都係資料，扮有反而係造假。<br><br>如果你知道邊個喺邊，歡迎話我知。</p></div>
     <div class="d-sec">${items}</div>`);
   writeURL(true);
 }
@@ -1126,7 +1129,12 @@ function methodView(){
 
     <div class="d-sec"><p class="d-lab">未解之地</p>
       <p class="d-body">${UNMAPPED.length} 個歌詞講過、但搵唔到位置嘅地方。佢哋唔喺地圖上，但照樣列出嚟 —— 唔確定本身都係資料。</p>
-      <p class="d-body"><button data-view="unmapped" class="pop-go">睇未解之地 →</button></p></div>`);
+      <p class="d-body"><button data-view="unmapped" class="pop-go">睇未解之地 →</button></p></div>
+
+    <div class="d-sec"><p class="d-lab">關於呢個 project</p>
+      <p class="d-body">非官方、非商業嘅個人 project。同 my little airport、其唱片公司及任何相關單位冇任何關係，未經授權，亦唔代表樂隊立場。歌詞版權歸原權利人所有，本站只引用短句作地理考證用途，唔提供完整歌詞。</p>
+      <p class="d-body">地圖介面同考證整理係個人研究成果，未授予任何開源授權。引用請註明出處：MLA Map by Loegunn。</p>
+      <p class="d-body">如果你係版權持有人或者地點業主，覺得本站內容侵犯咗你嘅權益，請話我知，我會即時移除，唔會爭辯。</p></div>`);
   writeURL(true);
 }
 
@@ -1206,8 +1214,8 @@ function renderSearch(){
     labEl.textContent = `${total} 個結果`;
   }
   noteEl.textContent = "搜尋範圍：歌名、地名、專輯、異名、考證註解。";
-  unBtn.textContent = `未解之地・${UNMAPPED.length} 個`;
-  goneBtn.textContent = `消失的香港・${NODES.filter(o=>o.p.status).length} 個`;
+  unBtn.textContent = `未解之地・${UNMAPPED.length} 個　歌詞講過但搵唔到位置`;
+  goneBtn.textContent = `消失的香港・${NODES.filter(o=>o.p.status).length} 個　已經冇咗或者變咗`;
   showBrowse();
 }
 

@@ -22,6 +22,11 @@ my little airport 廿年嚟唱過好多地方 —— 有啲仲喺度，有啲已
 
 所以呢個唔係一個權威資料庫，係一個歌迷自己整理嘅嘢。有錯請話我知。
 
+> ⚠️ 溫馨提示
+>
+> 呢個嘢純粹係返工偷偷地整、冇 IT 底嘅產物。寫錯咗或者跑版嘅話，大家細力啲屌 🥹
+> 有咩意見隨時同我講，希望大家玩得開心！
+
 ## 一條原則
 
 **唔肯定，就唔假裝肯定。**
@@ -82,11 +87,47 @@ App 入面「考證方法」一頁有完整說明同即時統計。
 
 ## 版權
 
-- 地圖介面同考證整理係個人研究成果
+- 地圖介面同考證整理係個人研究成果，未授予任何開源授權
 - 歌詞版權歸 my little airport 及原出版方所有。本站只引用短句作地理考證用途，每句均標明歌名、專輯及年份，唔提供完整歌詞，亦唔提供任何歌詞下載
 - 引用旨在符合《版權條例》（第 528 章）第 39 條「批評、評論、引用及報道和評論時事」嘅公平處理豁免：作品已公開發行、引用程度唔大於考證所需、附有確認聲明
 - 底圖 © OpenStreetMap contributors, © CARTO
 - 相關商標、名稱歸各自持有人所有
+
+如果你引用本站嘅資料，請註明出處：
+
+> MLA Map by Loegunn — https://loegunn.github.io/mlageo/
+
+---
+
+## Copyright & Usage
+
+This is an unofficial geographical map created out of a love for my little airport's music, compiled during urban wanderings and moments of listening. MLA Map documents not just locations, but footnotes of where these melodies once echoed across the city.
+
+The original source code, interface design, original documentation, data organization, map presentation, and other original materials created by Loegunn are protected by applicable copyright law. **No open-source license is granted to this project at this time.**
+
+You may view and use the publicly available MLA Map website for personal, non-commercial purposes.
+
+Without prior permission, you may not:
+
+- redistribute this project or substantial portions of it;
+- republish the project as your own;
+- present the project or substantial portions of it as your own work;
+- create and redistribute a substantially similar copy of the project;
+- remove or obscure the copyright notice.
+
+If you reference or use substantial material from this project, please provide clear attribution:
+
+> MLA Map by Loegunn — https://loegunn.github.io/mlageo/
+
+Because these memories tied to locations are the most private dialogue between my little airport and this city.
+
+### Disclaimer
+
+This is an unofficial, fan-made project. It is not affiliated with, endorsed by, or officially connected to my little airport. my little airport and its related music, lyrics, names, trademarks, and other rights belong to their respective rights holders.
+
+Lyrics are quoted only in short fragments for the purpose of geographical research, with the song title, album and year always attributed. No complete lyrics are reproduced or made available for download.
+
+Basemap © OpenStreetMap contributors, © CARTO.
 
 ## 有問題請聯絡
 
