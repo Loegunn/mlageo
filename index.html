@@ -385,6 +385,7 @@ const SONGS = [
   {id:"grad",title:"畢業變成失業",album:"我們在炎熱與抑鬱的夏天，無法停止抽煙",year:2007},
   {id:"mfgsb",title:"美孚根斯堡與白田珍寶金",album:"我們在炎熱與抑鬱的夏天，無法停止抽煙",year:2007},
   {id:"chan5",title:"和陳五 msn",album:"我們在炎熱與抑鬱的夏天，無法停止抽煙",year:2007},
+  {id:"boom",title:"讓我搭一班會爆炸的飛機",album:"我們在炎熱與抑鬱的夏天，無法停止抽煙",year:2007},
   {id:"mk",title:"介乎法國與旺角的詩意",album:"介乎法國與旺角的詩意",year:2009},
   {id:"nordic",title:"北歐是我們的死亡終站",album:"介乎法國與旺角的詩意",year:2009},
   {id:"tennis",title:"荔枝角網球場宣言",album:"介乎法國與旺角的詩意",year:2009},
@@ -436,7 +437,7 @@ const SONGS = [
    mapped  = 有地方掛住，即係 SONGS 嘅數量
    pending = 有線索但未確認（某夜電影中心）
    rejected= 查過，冇地名或者地名唔構成地點 */
-const COVERAGE = {total:165, mapped:53, pending:0, rejected:112};
+const COVERAGE = {total:165, mapped:54, pending:0, rejected:111};
 
 /* ══════════ 表二：地方 ══════════ */
 const PLACES = [
@@ -482,7 +483,8 @@ const PLACES = [
   {id:"texas",name:"德州",precision:"area",region:"away",lat:31.0,lng:-100.0,note:"州級，呢個係中心點"},
   {id:"peak",name:"山頂（上山路段）",precision:"area",region:"hk",lat:22.2716,lng:114.1497,note:"港島太平山頂。歌詞講「感受個山有幾斜」，指嘅係上山嗰段彎多又斜嘅山路，但冇講明係山頂道定舊山頂道，所以唔開子點，用區級代表位置。"},
   {id:"kyoto",name:"京都",precision:"area",region:"away",lat:35.0116,lng:135.7681,note:"城市級。民宿無名。"},
-  {id:"tainan",name:"台南",precision:"area",region:"away",lat:22.9997,lng:120.227,note:"城市級。"},
+  {id:"taiwan",name:"台灣",precision:"area",region:"away",lat:25.0330,lng:121.5654,note:"國家／地區級。歌詞講嘅係一程飛去台灣嘅航班，冇提到台灣境內任何具體地方，所以用台北（首都、桃園機場入境點）做代表位置。首歌入面架飛機從來冇到埗。"},
+  {id:"tainan",name:"台南",precision:"area",region:"away",within:"taiwan",lat:22.9997,lng:120.227,note:"城市級。"},
   {id:"temple",name:"廟街",precision:"exact",region:"hk",lat:22.3068,lng:114.1697},
   {id:"gough",name:"歌賦街",precision:"exact",region:"hk",lat:22.2838,lng:114.1516},
   {id:"lokshan",name:"落山道",precision:"exact",region:"hk",lat:22.3212,lng:114.1896},
@@ -568,6 +570,7 @@ const REFS = [
   {place:"texas",song:"tx",kind:"lyric",date:"2028-02-22",line:"你在黑夜時我在白天",note:"由歌詞內部就判得到係美國德州唔係山東德州：歌詞講「你在黑夜時我在白天」，即係同香港差約半日。山東德州同香港零時差，美國德州差十幾個鐘。同首歌另有一個具體未來日期：2028 年 2 月 22 號。"},
   {place:"peak",song:"night",kind:"lyric",line:"咁啱我就有部車，車你去山頂感受個山有幾斜",note:"「咁啱我就有部車，車你去山頂感受個山有幾斜」。「有幾斜」係實際駕駛體驗，唔係地名裝飾。"},
   {place:"kyoto",song:"kyotoS",kind:"lyric",note:"阿P第一次京都之旅、寫俾媽媽嘅歌。歌詞講七月某夜住民宿，聽到房外老闆娘傾偈。真實旅程。"},
+  {place:"taiwan",song:"boom",kind:"lyric",line:"讓我搭一班會爆炸的飛機去到台灣之前被炸死",note:"台灣係歌詞講明嘅目的地，但架飛機喺到埗之前就爆炸。同〈北歐是我們的死亡終站〉一樣，係一個講出咗名、但去唔到嘅地方。原本判過唔收（認為航線兩端唔算地點），後來覆核：既然芬蘭、德國、冰島、瑞典、泰國呢啲同樣冇具體地點嘅國家級點都收咗，台灣冇理由唔收。"},
   {place:"tainan",song:"deposit",kind:"lyric",note:"私奔到寶島，去到台南，風景會做到治療我們嘅虛無。"},
   {place:"lingnan",song:"mcd",kind:"lyric",line:"潛入『嶺南之風』看不見四周",note:"「那夜經過大角咀你細訴小時候，然後我們隔一兩週便結伴公園夜遊，潛入嶺南之風看不見四周」。留意個動詞係「潛入」—— 嶺南之風開放時間係早上七時至晚上十一時，夜遊真係要潛。呢個 pin 由「歌詞提過」升做「有具體行為描述」。"},
   {place:"temple",song:"mcd",kind:"lyric",line:"想起廟街某夜，相士說你屬於⋯",note:"「想起廟街某夜，相士說你屬於⋯」。廟街算命檔係實存行業。"},
