@@ -23,6 +23,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>my little airport 歌詞地圖</title>
 <meta name="description" content="一張由歌詞建立嘅 my little airport 香港地圖。逐首歌核實過，搵唔到位置嘅唔會扮有。">
+<!-- ⚠ 測試期用：正式公開前刪走下面呢一行 -->
+<meta name="robots" content="noindex,nofollow">
 <meta name="author" content="Loegunn">
 <meta name="copyright" content="Copyright (c) 2026 Loegunn. All rights reserved.">
 <meta name="theme-color" content="#F5F4EF">
@@ -565,7 +567,7 @@ const REFS = [
   {place:"dog99",song:"syc",kind:"lyric",line:"邊聽邊講我忘了怎去99咖啡店",note:"多個本地來源（香港青年協會2024年專題、getreadyhk等）均將呢間同歌詞掛鈎。歌詞引句轉錄自二手來源，未同官網歌詞逐字核對。"},
   {place:"manfat",song:"syc",kind:"lyric",note:"歌詞附帶實地細節（暗光卡位窗邊）。地點判斷屬作者本地認知，未有公開來源佐證。"},
   {place:"sycam",song:"syc",kind:"lyric",line:"詩歌舞街地上有著光點閃閃",note:"「詩歌舞街地上有著光點閃閃」。一場 gig（大角咀）→ 散場行去深水埗 → 途中經詩歌舞街，三個地名喺同一區連成一線。更正：歌詞「上山那間酒店」原判喺澳門，覆核後確認唔係澳門，係詩歌舞街一帶嘅場景，已將澳門呢個 ref 剷走。"},
-  {place:"texas",song:"tx",kind:"lyric",date:"2028-02-22",line:"你在黑夜時我在白天",note:"由歌詞內部就判得到係美國德州唔係山東德州：歌詞講「你在黑夜時我在白天」，即係同香港差約半日。山東德州同香港零時差，美國德州差十幾個鐘。同首歌另有一個具體未來日期：2028 年 2 月 22 號。"},
+  {place:"texas",song:"tx",kind:"lyric",date:"2028-02-22",dsrc:"歌詞",line:"你在黑夜時我在白天",note:"由歌詞內部就判得到係美國德州唔係山東德州：歌詞講「你在黑夜時我在白天」，即係同香港差約半日。山東德州同香港零時差，美國德州差十幾個鐘。同首歌另有一個具體未來日期：2028 年 2 月 22 號。"},
   {place:"peak",song:"night",kind:"lyric",line:"咁啱我就有部車，車你去山頂感受個山有幾斜",note:"「咁啱我就有部車，車你去山頂感受個山有幾斜」。「有幾斜」係實際駕駛體驗，唔係地名裝飾。"},
   {place:"kyoto",song:"kyotoS",kind:"lyric",note:"阿P第一次京都之旅、寫俾媽媽嘅歌。歌詞講七月某夜住民宿，聽到房外老闆娘傾偈。真實旅程。"},
   {place:"taiwan",song:"boom",kind:"lyric",line:"讓我搭一班會爆炸的飛機去到台灣之前被炸死",note:"台灣係歌詞講明嘅目的地，但架飛機喺到埗之前就爆炸。同〈北歐是我們的死亡終站〉一樣，係一個講出咗名、但去唔到嘅地方。原本判過唔收（認為航線兩端唔算地點），後來覆核：既然芬蘭、德國、冰島、瑞典、泰國呢啲同樣冇具體地點嘅國家級點都收咗，台灣冇理由唔收。"},
@@ -582,10 +584,10 @@ const REFS = [
   {place:"sungwong",song:"klncityS",kind:"lyric",line:"宋皇臺古蹟位置不遠",note:"「宋皇臺古蹟位置不遠」。"},
   {place:"regal",song:"klncityS",kind:"lyric",line:"富豪酒店有好光景",note:"「富豪酒店有好光景」。啟德年代嘅機場酒店。"},
   {place:"kaitak",song:"klncityS",kind:"lyric",line:"昨日啟德已變冷清",note:"「昨日啟德已變冷清」。"},
-  {place:"tokwaw",song:"ams",kind:"lyric",date:"2017-07-14",note:"出發點。碟內文案寫明：上年七月十四號搭夜機歐遊，同時四位民選議員被DQ，連之前共六位。"},
+  {place:"tokwaw",song:"ams",kind:"lyric",date:"2017-07-14",dsrc:"碟內文案",note:"出發點。碟內文案寫明：上年七月十四號搭夜機歐遊，同時四位民選議員被DQ，連之前共六位。"},
   {place:"klncity",song:"ams",kind:"lyric",note:"搭小巴返屋企，特登唔叫落車，等其他人嗌先落，睇下會行幾遠路；有次去到九龍城都未有人落。同〈春天在車廂裡〉「由上環到天后」同一類：有端點嘅漫遊。"},
   {place:"ssp",song:"ams",kind:"lyric",note:"同一條小巴遊戲嘅另一個落車點。"},
-  {place:"amsterdam",song:"ams",kind:"lyric",date:"2017-07-14",note:"第一次去，夜機。"},
+  {place:"amsterdam",song:"ams",kind:"lyric",date:"2017-07-14",dsrc:"碟內文案",note:"第一次去，夜機。"},
   {place:"iceland",song:"ams",kind:"lyric",line:"轉機去德國再去冰島",note:"「轉機去德國再去冰島」。"},
   {place:"germany",song:"ams",kind:"lyric",line:"轉機去德國再去冰島",note:"轉機途經。"},
   {place:"yuemin",song:"y168",kind:"lyric",line:"一六八遊戲機中心",note:"碟內文案直接寫明：觀塘裕民坊舊商場有間「一六八遊戲機中心」。歌名就係間舖嘅名。歌詞：午飯後喺街上行，行入裕民中心舊商場，發現遊戲機中心，入去玩《雙截龍》。"},
@@ -595,14 +597,14 @@ const REFS = [
   {place:"ymt",song:"nathanS",kind:"lyric",note:"6C 路線嘅終點段。"},
   {place:"langham",song:"nathanS",kind:"lyric",note:"去朗豪坊睇戲。待考：邊間戲院。"},
   {place:"sweden",song:"heyhey",kind:"lyric",line:"同你搭長途巴士去瑞典",note:"「同你搭長途巴士去瑞典」。此曲陳輝陽作曲，仍由 mla 演繹。"},
-  {place:"loststars",song:"syc",kind:"lyric",date:"2018-11-20",line:"那晚看Russian Red大角咀表演，你與我竟會再遇見",note:"演出確認：Russian Red（西班牙）2018年11月20日喺大角咀 Lost Stars Livehouse 演出。Yahoo 新聞同 HK01 均直接將呢句歌詞同呢場演出掛鈎；中大學生報有現場文章記錄日期；當年售票頁列明場地地址。"},
+  {place:"loststars",song:"syc",kind:"lyric",date:"2018-11-20",dsrc:"外部考證",line:"那晚看Russian Red大角咀表演，你與我竟會再遇見",note:"演出確認：Russian Red（西班牙）2018年11月20日喺大角咀 Lost Stars Livehouse 演出。Yahoo 新聞同 HK01 均直接將呢句歌詞同呢場演出掛鈎；中大學生報有現場文章記錄日期；當年售票頁列明場地地址。"},
   {place:"ssp",song:"syc",kind:"lyric",line:"完場與你去深水埗那邊",note:"「完場與你去深水埗那邊」。接返 2018 年〈阿姆斯特丹夜機〉講「去完旅行我會搬去深水埗」—— 居住地層同歌詞層對上咗。"},
   {place:"wongtai",song:"gb20",kind:"lyric",line:"第一張相喺黃大仙開始",note:"「第一張相喺黃大仙開始」；黃大仙之後話寄嘢俾對方，問地址。一段四年關係嘅起點。"},
   {place:"prince",song:"kclass",kind:"lyric",line:"如果可以重來，到太子午夜時候",note:"太子一帶。"},
   {place:"repulse",song:"saidout",kind:"lyric",line:"你有冇去過淺水灣呢間露台餐廳？",note:"「你有冇去過淺水灣呢間露台餐廳？」"},
   {place:"kyoto",song:"swallow",kind:"lyric",note:"七年後重返京都。"},
   {place:"kamo",song:"swallow",kind:"lyric",line:"京都之夜竟未發現／日後重遊鴨川小店",note:"「京都之夜竟未發現／日後重遊鴨川小店」。將 2014 年〈京都民宿夜〉嘅城市級點收窄到一條有名嘅河 —— 七年之後嘅精度升級。"},
-  {place:"starferry",song:"indoorsy",kind:"lyric",date:"2006",line:"你錯過了保衛天星碼頭",note:"「你錯過了保衛天星碼頭」，全首出現兩次（尾段轉做「其實我都錯過了」）。"},
+  {place:"starferry",song:"indoorsy",kind:"lyric",date:"2006",dsrc:"歷史事件",line:"你錯過了保衛天星碼頭",note:"「你錯過了保衛天星碼頭」，全首出現兩次（尾段轉做「其實我都錯過了」）。"},
   {place:"govhouse",song:"indoorsy",kind:"lyric",line:"你錯過了包圍禮賓府",note:"「你錯過了包圍禮賓府」。"},
   {place:"thailand",song:"walkyr",kind:"lyric",note:"泰國夜市。真係去過，唔係設想。"},
   {place:"nanyang",song:"unknown_then",kind:"lyric",line:"那年獨自去南洋",note:"「那年獨自去南洋」。可替換測試：換做「去咗東南亞」或「去咗印度」都會改變意象，通過測試。"},
@@ -643,12 +645,16 @@ UNMAPPED.forEach(u=>{ (unmappedBySong[u.song] = unmappedBySong[u.song] || []).pu
    alb     ：上環 A2 出口見 → 歌賦街飲酒 → 下亞厘畢道（A2 行去歌賦街約 5–8 分鐘）
    spr     ：由上環到天后（港島綫同一條線，中間隔中環、金鐘、灣仔、銅鑼灣）
    nathanS ：土瓜灣搭 6C → 彌敦道 → 油麻地（6C 九龍城碼頭↔美孚，途經土瓜灣道、加士居道、彌敦道、油麻地）
+   ams     ：土瓜灣夜機出發 → 阿姆斯特丹 → 德國轉機 → 冰島
+             次序來自歌詞「轉機去德國再去冰島」；出發日期 2017-07-14 來自碟內文案。
+             九龍城、深水埗唔入線 —— 嗰兩個係另一件事（小巴遊戲）。
    朗豪坊唔入線：歌詞冇講係咪同一晚接落去。
    其餘歌一律唔連。 */
 const ROUTES = {
   alb:     ["sheungw","gough","albert"],
   spr:     ["sheungw","tinhau"],
-  nathanS: ["tokwaw","nathanrd","ymt"]
+  nathanS: ["tokwaw","nathanrd","ymt"],
+  ams:     ["tokwaw","amsterdam","germany","iceland"]
 };
 
 const ROUTE_OF = {};
@@ -703,6 +709,19 @@ function visible(o){
 const inRegion = o => STATE.region==="hk" ? o.p.region==="hk" : true;
 /* 列表：香港模式列香港，世界模式只列外地 */
 const inList   = o => o.p.region === (STATE.region==="hk" ? "hk" : "away");
+
+/* 世界模式：21 個外地點按地區分組。純粹係將平面清單排好，唔係主題策展，亦唔會連線。 */
+const ZONES = ["歐洲","日本","台灣","中國大陸","東南亞","美洲","其他"];
+function zoneOf(p){
+  const {lat, lng} = p;
+  if(lng >= -25 && lng <= 45  && lat >= 34   && lat <= 72)   return "歐洲";
+  if(lng >= 122 && lng <= 154 && lat >= 24   && lat <= 46)   return "日本";
+  if(lng >= 119 && lng <= 123 && lat >= 21.8 && lat <= 25.5) return "台灣";
+  if(lng >= 73  && lng <= 135 && lat >= 18   && lat <= 54)   return "中國大陸";
+  if(lng >= 92  && lng <= 142 && lat >= -11  && lat <= 24)   return "東南亞";
+  if(lng <= -30) return "美洲";
+  return "其他";
+}
 
 /* ══════════ 地圖 ══════════ */
 const map = L.map("map",{zoomControl:false, scrollWheelZoom:true});
@@ -885,12 +904,26 @@ function renderSongs(){
 
 function renderList(){
   if(STATE.mode === "songs") return renderSongs();
+
   const items = NODES.filter(o=>inList(o)&&visible(o))
     .sort((a,b)=> a.debutYear-b.debutYear || a.debutIdx-b.debutIdx
                 || a.p.name.localeCompare(b.p.name,"zh-Hant"));
   listEl.innerHTML = "";
-  items.forEach(o=>listEl.appendChild(placeRow(o)));
-  labEl.textContent = `${items.length} 個地方`;
+
+  if(STATE.region === "world"){
+    /* 21 個外地點按地區分組，唔係主題策展，亦唔會連線 */
+    const g = {};
+    items.forEach(o=>{ const z = zoneOf(o.p); (g[z] = g[z] || []).push(o); });
+    ZONES.filter(z=>g[z]).forEach(z=>{
+      listEl.appendChild(groupLab(`${z}　<b>${g[z].length}</b>`));
+      g[z].forEach(o=>listEl.appendChild(placeRow(o)));
+    });
+    labEl.textContent = `${items.length} 個外地地點`;
+  } else {
+    items.forEach(o=>listEl.appendChild(placeRow(o)));
+    labEl.textContent = `${items.length} 個地方`;
+  }
+
   const other = NODES.filter(o=>!inList(o)&&visible(o)).length;
   noteEl.textContent = STATE.region==="hk"
     ? (other ? `另有 ${other} 個外地地點，切去「世界」睇。` : "")
